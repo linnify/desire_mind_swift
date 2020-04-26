@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200A73362455A01100E198B4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A73352455A01100E198B4 /* NetworkService.swift */; };
 		344B4F2824558A180013CA81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B4F2724558A180013CA81 /* AppDelegate.swift */; };
 		344B4F2A24558A180013CA81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B4F2924558A180013CA81 /* SceneDelegate.swift */; };
 		344B4F2C24558A180013CA81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B4F2B24558A180013CA81 /* ViewController.swift */; };
 		344B4F2F24558A180013CA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344B4F2D24558A180013CA81 /* Main.storyboard */; };
 		344B4F3124558A1D0013CA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344B4F3024558A1D0013CA81 /* Assets.xcassets */; };
 		344B4F3424558A1D0013CA81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344B4F3224558A1D0013CA81 /* LaunchScreen.storyboard */; };
+		67AAFFA646AD9B42B8013A42 /* Pods_DesireMind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4EFCF803A749DB693A1EBD2 /* Pods_DesireMind.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		200A73352455A01100E198B4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		344B4F2424558A180013CA81 /* DesireMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesireMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344B4F2724558A180013CA81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344B4F2924558A180013CA81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		344B4F3024558A1D0013CA81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		344B4F3324558A1D0013CA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		344B4F3524558A1D0013CA81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B2CB5045F81B7493AAA1BEF /* Pods-DesireMind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesireMind.debug.xcconfig"; path = "Target Support Files/Pods-DesireMind/Pods-DesireMind.debug.xcconfig"; sourceTree = "<group>"; };
+		83007D411305D38A2A0E98A9 /* Pods-DesireMind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesireMind.release.xcconfig"; path = "Target Support Files/Pods-DesireMind/Pods-DesireMind.release.xcconfig"; sourceTree = "<group>"; };
+		D4EFCF803A749DB693A1EBD2 /* Pods_DesireMind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesireMind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67AAFFA646AD9B42B8013A42 /* Pods_DesireMind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200A733424559FF900E198B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				200A73352455A01100E198B4 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		344B4F1B24558A180013CA81 = {
 			isa = PBXGroup;
 			children = (
 				344B4F2624558A180013CA81 /* DesireMind */,
 				344B4F2524558A180013CA81 /* Products */,
+				DFADA2951A9E498FBBFF6109 /* Pods */,
+				35D3CD42F3727A02CEFCDC4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +73,7 @@
 		344B4F2624558A180013CA81 /* DesireMind */ = {
 			isa = PBXGroup;
 			children = (
+				200A733424559FF900E198B4 /* Services */,
 				344B4F2724558A180013CA81 /* AppDelegate.swift */,
 				344B4F2924558A180013CA81 /* SceneDelegate.swift */,
 				344B4F2B24558A180013CA81 /* ViewController.swift */,
@@ -67,6 +85,23 @@
 			path = DesireMind;
 			sourceTree = "<group>";
 		};
+		35D3CD42F3727A02CEFCDC4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4EFCF803A749DB693A1EBD2 /* Pods_DesireMind.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFADA2951A9E498FBBFF6109 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B2CB5045F81B7493AAA1BEF /* Pods-DesireMind.debug.xcconfig */,
+				83007D411305D38A2A0E98A9 /* Pods-DesireMind.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 344B4F3824558A1D0013CA81 /* Build configuration list for PBXNativeTarget "DesireMind" */;
 			buildPhases = (
+				3207E23D27A7129A812480F5 /* [CP] Check Pods Manifest.lock */,
 				344B4F2024558A180013CA81 /* Sources */,
 				344B4F2124558A180013CA81 /* Frameworks */,
 				344B4F2224558A180013CA81 /* Resources */,
+				E1A205D5DD51A428BCC8D09C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +170,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3207E23D27A7129A812480F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesireMind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A205D5DD51A428BCC8D09C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesireMind/Pods-DesireMind-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesireMind/Pods-DesireMind-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesireMind/Pods-DesireMind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		344B4F2024558A180013CA81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +219,7 @@
 			files = (
 				344B4F2C24558A180013CA81 /* ViewController.swift in Sources */,
 				344B4F2824558A180013CA81 /* AppDelegate.swift in Sources */,
+				200A73362455A01100E198B4 /* NetworkService.swift in Sources */,
 				344B4F2A24558A180013CA81 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +362,7 @@
 		};
 		344B4F3924558A1D0013CA81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2CB5045F81B7493AAA1BEF /* Pods-DesireMind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +381,7 @@
 		};
 		344B4F3A24558A1D0013CA81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83007D411305D38A2A0E98A9 /* Pods-DesireMind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
