@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		344B4F2824558A180013CA81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B4F2724558A180013CA81 /* AppDelegate.swift */; };
 		344B4F2A24558A180013CA81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B4F2924558A180013CA81 /* SceneDelegate.swift */; };
-		344B4F2C24558A180013CA81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B4F2B24558A180013CA81 /* ViewController.swift */; };
 		344B4F2F24558A180013CA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344B4F2D24558A180013CA81 /* Main.storyboard */; };
 		344B4F3124558A1D0013CA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344B4F3024558A1D0013CA81 /* Assets.xcassets */; };
 		344B4F3424558A1D0013CA81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344B4F3224558A1D0013CA81 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,8 @@
 		349C76AB24681E7300085071 /* WishesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C76AA24681E7300085071 /* WishesService.swift */; };
 		349DBA83246827CE00BA2065 /* APIConfigurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 349DBA82246827CE00BA2065 /* APIConfigurations.plist */; };
 		349DBA852468295F00BA2065 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DBA842468295F00BA2065 /* NetworkConfiguration.swift */; };
+		349FC82524713FDA00E0431B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FC82424713FDA00E0431B /* LoginViewController.swift */; };
+		349FC828247148EC00E0431B /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FC827247148EC00E0431B /* InsetTextField.swift */; };
 		BFF7D87ED400790BFDB773E4 /* Pods_DesireMind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CE90D21C83A35C57C21F77 /* Pods_DesireMind.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +27,6 @@
 		344B4F2424558A180013CA81 /* DesireMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesireMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344B4F2724558A180013CA81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344B4F2924558A180013CA81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		344B4F2B24558A180013CA81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		344B4F2E24558A180013CA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		344B4F3024558A1D0013CA81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		344B4F3324558A1D0013CA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		349C76AA24681E7300085071 /* WishesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishesService.swift; sourceTree = "<group>"; };
 		349DBA82246827CE00BA2065 /* APIConfigurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIConfigurations.plist; sourceTree = "<group>"; };
 		349DBA842468295F00BA2065 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		349FC82424713FDA00E0431B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		349FC827247148EC00E0431B /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		73C155F3F88B2CFB38BD5FA3 /* Pods-DesireMind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesireMind.release.xcconfig"; path = "Target Support Files/Pods-DesireMind/Pods-DesireMind.release.xcconfig"; sourceTree = "<group>"; };
 		C2CE90D21C83A35C57C21F77 /* Pods_DesireMind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesireMind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,11 +84,12 @@
 		344B4F2624558A180013CA81 /* DesireMind */ = {
 			isa = PBXGroup;
 			children = (
+				349FC826247148B700E0431B /* Views */,
+				349FC82324713FC300E0431B /* ViewControllers */,
 				349C76A724681D5E00085071 /* Models */,
 				344B4F3B24559FF30013CA81 /* Services */,
 				344B4F2724558A180013CA81 /* AppDelegate.swift */,
 				344B4F2924558A180013CA81 /* SceneDelegate.swift */,
-				344B4F2B24558A180013CA81 /* ViewController.swift */,
 				344B4F2D24558A180013CA81 /* Main.storyboard */,
 				344B4F3024558A1D0013CA81 /* Assets.xcassets */,
 				344B4F3224558A1D0013CA81 /* LaunchScreen.storyboard */,
@@ -112,6 +115,22 @@
 				349C76A824681D7000085071 /* Wish.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		349FC82324713FC300E0431B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				349FC82424713FDA00E0431B /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		349FC826247148B700E0431B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				349FC827247148EC00E0431B /* InsetTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3D2C3392ABB2C0228B0A3133 /* Frameworks */ = {
@@ -239,9 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349FC82524713FDA00E0431B /* LoginViewController.swift in Sources */,
 				349C76A924681D7000085071 /* Wish.swift in Sources */,
-				344B4F2C24558A180013CA81 /* ViewController.swift in Sources */,
 				349C76AB24681E7300085071 /* WishesService.swift in Sources */,
+				349FC828247148EC00E0431B /* InsetTextField.swift in Sources */,
 				344B4F2824558A180013CA81 /* AppDelegate.swift in Sources */,
 				349DBA852468295F00BA2065 /* NetworkConfiguration.swift in Sources */,
 				349C76A62468176500085071 /* NetworkProtocol.swift in Sources */,
